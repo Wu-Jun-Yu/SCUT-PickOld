@@ -1,0 +1,7 @@
+<!--pages/main-release/main-release.wxml-->
+<view class="box">
+  <button class="item" bindtap = 'jumpTo1' plain>二手交易</button>
+  <button class="item" bindtap = 'jumpTo2' plain>楼内专区</button>
+  <button class="item" bindtap = 'jumpTo3' plain>跨校区代送</button>
+  <button class="item" bindtap = 'jumpTo4' plain>急出&急收</button>
+</view>

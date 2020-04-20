@@ -1,0 +1,14 @@
+<!--pages/category/category.wxml-->
+<mp-tabs 
+  tabs="{{tabs}}" 
+  activeTab="{{activeTab}}" 
+  swiperClass="weui-tabs-swiper"
+  bindtabclick="onTabCLick"
+  bindchange="onChange"
+  activeClass="tab-bar-title__selected"
+>
+  <block wx:for="{{tabs}}" wx:key="title">
+    <view class="tab-content" slot="tab-content-{{index}}" > {{item.title}} </view>
+  </block>
+  <!-- components\tabs\index.wxss 修改文字颜色等样式 -->
+</mp-tabs>

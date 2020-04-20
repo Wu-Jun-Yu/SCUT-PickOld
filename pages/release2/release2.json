@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mp-toptips": "../components/toptips/toptips",
+    "mp-cells": "../components/cells/cells",
+    "mp-cell": "../components/cell/cell",
+    "mp-form": "../components/form/form",
+    "mp-uploader": "../components/uploader/uploader"
+  },
+  "navigationBarTitleText": "华工旧拾"
+}

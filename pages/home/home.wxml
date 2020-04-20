@@ -1,0 +1,25 @@
+<!--pages/home/home.wxml-->
+<swiper
+      class = 'swiper-container'
+      circular
+      autoplay
+      interval="2000"
+      duration="300"
+      indicator-dots
+      indicator-active-color="#ffaa00"
+
+         >
+  <block wx:for = '{{home_images}}' wx:key = 'index'>
+    <swiper-item >
+      <image src = '{{item}}' class = "swiper-image"></image> 
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 公告 -->
+<scrollText 
+  text = '华南理工大学（South China University of Technology），简称华南理工，位于广州市，由中华人民共和国教育部直属，是教育部与广东省人民政府共建的全国重点大学，位列国家“双一流”（A类）、“211工程”、“985工程”' 
+  url = '/pages/notice/notice'>
+</scrollText>
+
+

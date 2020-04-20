@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "scrollText": "/components/scrollText/scrollText" },
+  "navigationBarTitleText": "华工旧拾"
+  
+}

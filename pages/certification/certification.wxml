@@ -1,0 +1,48 @@
+<!--pages/release/release.wxml-->
+<mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+        <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+            
+          <mp-cells title="请亮出窝工身份">
+              <mp-cell prop="studentName" title="姓名" ext-class="">
+                  <input bindinput="formInputChange" data-field="姓名" class="weui-input" placeholder="请输入你的名字"/>
+              </mp-cell>
+              <mp-cell prop="studentNumbers" title="学号" ext-class="">
+                  <input bindinput="formInputChange" data-field="学号" class="weui-input" placeholder="请输入你的学号"/>
+              </mp-cell>
+          </mp-cells>
+        </mp-form>
+
+
+<!-- <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindCategoryChange" value="{{categoryIndex}}" range="{{categories}}">
+                        <view class="weui-select weui-select_in-select-after">{{categories[categoryIndex]}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view> -->
+
+        <!-- 选择校区及宿舍 -->
+        <view class="section">
+          <view class="section__campus">选择校区及宿舍</view>
+          <view class="divLine">
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+              <view class="picker weui-cell__bd">
+                当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+
+        <!-- 底部提交按钮 -->
+        <view class="weui-btn-area add_btn">
+            <button class="weui-btn btn" type="primary" bindtap="submitForm">提交</button>
+        </view>
+    </view>
+</view>
+
+

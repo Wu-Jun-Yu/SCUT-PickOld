@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/category/category",
+    "pages/release/release",
+    "pages/mine/mine",
+    "components/scrollText/scrollText",
+    "pages/notice/notice",
+    "pages/release2/release2",
+    "pages/release3/release3",
+    "pages/certification/certification",
+    "pages/main-release/main-release",
+    "pages/release4/release4"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#aaaaaa",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "/assets/tarbar/部门.png",
+        "selectedIconPath": "/assets/tarbar/部门.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "/assets/tarbar/工作台.png",
+        "selectedIconPath": "/assets/tarbar/工作台.png"
+      },
+      {
+        "pagePath": "pages/main-release/main-release",
+        "text": "发布",
+        "iconPath": "/assets/tarbar/待办.png",
+        "selectedIconPath": "/assets/tarbar/待办.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/assets/tarbar/个人.png",
+        "selectedIconPath": "/assets/tarbar/个人.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap39.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

@@ -1,0 +1,58 @@
+<!--pages/user/user.wxml-->
+
+<view class="mine-wrapper">
+  <view class="avatar-wrapper">
+    <view class="avatar">
+      <image 
+        src="{{userInfo.avatarUrl ? userInfo.avatarUrl:'/assets/images/用户.svg'}}">
+      </image>
+    </view>
+    <view class="userinfo">
+      <button 
+        wx:if="{{!hasUserInfo && canIUse}}" 
+        open-type="getUserInfo" 
+        bindgetuserinfo="getUserInfo"
+        size = 'mini'
+        plain>
+          登录 
+      </button>
+      <block wx:else>          
+        <text class="userinfo-nickname">{{userInfo.nickName}}
+        </text>
+      </block> 
+      <!-- student certification -->
+
+      <view class="certification">
+        <button wx:if="{{!hasCertification && canIUse}}" 
+                size = 'mini'
+                plain
+                bindtap = 'jumpToCertification'>
+        学生认证
+        </button>
+      
+      </view>
+
+    </view>
+  </view>
+  <view class="list-wrapper">
+    <view class="alllists">
+      <block wx:for="{{menuitems}}" wx:key="menu_for">
+        <navigator url="{{item.url}}" class="lists">
+        <view class='content'>
+          <view class="listimg">
+            <image src="{{item.icon}}"></image>
+          </view>
+          <view class="listtext">{{item.text}}</view>
+          <view class="listicon">{{item.tips}}</view>
+          <view class="arrows">
+            <image src="{{item.arrows}}"></image>
+          </view>
+        </view>
+        </navigator>
+
+        <view class="divLine"></view>
+      </block>
+    </view>
+  </view>
+</view>
+

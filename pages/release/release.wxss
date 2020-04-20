@@ -1,0 +1,3 @@
+/* pages/release/release.wxss */
+
+button {margin: 10px;}

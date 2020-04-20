@@ -1,0 +1,78 @@
+/* pages/user/user.wxss */
+.avatar-wrapper {
+  background: #609fda;
+  padding: 50rpx 0;
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+ 
+.avatar-wrapper .avatar{
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.avatar-wrapper .avatar image {
+  width: 128rpx;
+  height: 128rpx;
+  background-color: burlywood;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+}
+ 
+.avatar-wrapper .text {
+  text-align: center;
+  color: #fff;
+}
+ 
+.listimg image {
+  margin-right: 10rpx;
+  vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+}
+ 
+.content{
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+ 
+/*分割线样式*/
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+}
+ 
+.arrows image {
+  /* vertical-align: middle; */
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 500rpx;
+}
+ 
+.avatar-wrapper .userinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.avatar-wrapper .userinfo-avatar{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  
+}
+
+.userinfo .userinfo-nickname {
+  text-align: center;
+  color: rgb(203, 240, 36);
+}

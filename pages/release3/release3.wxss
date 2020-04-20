@@ -1,0 +1,13 @@
+/* pages/release3/release3.wxss */
+.FROM{
+  color: coral;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  font-weight: 500;
+}
+.TO{
+  color: coral;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  font-weight: 500;
+}
